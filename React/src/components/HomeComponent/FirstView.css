@@ -1,0 +1,31 @@
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+section div.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 520px;
+}
+
+section div.info h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+section div.info p{
+    margin: 10px 0px;
+}
+
+section div.info button{
+    border: solid 1px black;
+    font-size: 18px;
+    padding: 10px;
+}

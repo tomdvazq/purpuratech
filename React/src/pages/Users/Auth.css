@@ -1,0 +1,116 @@
+.authContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 142px);
+    animation: auth 1s 1;
+}
+
+@keyframes auth {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    width: 500px;
+}
+
+.authContainer .auth .branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authContainer .auth .branding img{
+    margin-right: 10px;
+}
+
+.authContainer .auth .branding h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.authContainer .auth .branding h4 span{
+    font-weight: 600;
+}
+
+.authContainer .auth h1{
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 20px;
+    margin: 10px 0px;
+}
+
+.authContainer .auth form{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.authContainer .auth form.login{
+    width: 100%;
+}
+
+.authContainer .auth form fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+
+input {
+    color: #706c6c;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #706c6c;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    transform: translateY(-38px);
+    padding: 2px;
+}
+
+.authContainer .auth form fieldset label{
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    cursor: pointer;
+    transition: transform .5s, color .3s;
+}
+
+.authContainer .auth form button {
+    border: solid 1px white;
+    width: 93%;
+    align-self: center;
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+.authContainer .auth form span {
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 14px;
+}
